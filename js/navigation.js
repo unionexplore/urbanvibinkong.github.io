@@ -1,5 +1,21 @@
 // navigation.js
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Event listeners for the buttons
+  document.querySelector('.navigationBar[data-target="sectionJump"]').addEventListener('click', jumpTo);
+  document.querySelector('.navigationBar[data-target="sectionAbout"]').addEventListener('click', aboutSection);
+
+  // Handle URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const navigateParam = urlParams.get('navigate');
+
+  if (navigateParam === 'JumpTo') {
+    jumpTo();
+  } else if (navigateParam === 'About') {
+    aboutSection();
+  }
+});
+
 // Function to handle the "Jump To" button click
 function jumpTo() {
   // Remove the 'active' class from all navigation links
@@ -33,9 +49,3 @@ function removeActiveClassFromNavigation() {
     link.classList.remove('active');
   });
 }
-
-// Event listeners for the buttons
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.navigationBar[data-target="sectionJump"]').addEventListener('click', jumpTo);
-  document.querySelector('.navigationBar[data-target="sectionAbout"]').addEventListener('click', aboutSection);
-});
