@@ -13,6 +13,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <div class="pageloader">
+    <div class="loader">
+      <img src="https://urbanvibinkong.site/assets/logo.png" alt="Logo">
+    </div>
+  </div>
   
   <nav class="navbar navbarCustom">
     <div class="container-fluid">
@@ -130,6 +136,23 @@
   <script src="js/navigation.js"></script>
   <script src="js/fadeindown.js"></script>
   <script src="js/fadeinup.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  // Simulate the loading process
+  setTimeout(function() {
+    // Hide the page loader when the content is loaded
+    hidePageLoader();
+  }, 2000); // You can adjust the duration as needed
+  });
+
+  function hidePageLoader() {
+    // Hide the page loader
+    var pageLoader = document.querySelector('.pageloader');
+    if (pageLoader) {
+      pageLoader.style.display = 'none';
+    }
+  }
+  </script>
 
 </body>
 </html>
