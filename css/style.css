@@ -266,6 +266,10 @@ body{
     justify-content: center;
   }
 
+  .navigationBar{
+    font-size: 15px;
+  }
+
   .headerInfo{
     font-size: 35px;
     line-height: normal;
