@@ -257,7 +257,9 @@ body{
 
 /* Breakpoint untuk perangkat tablet (lebar layar antara 768px dan 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
+  .wrapper.secondHero{
+    flex-direction: column;
+  }
 }
 
 /* Breakpoint untuk perangkat mobile (lebar layar kurang dari 768px) */
