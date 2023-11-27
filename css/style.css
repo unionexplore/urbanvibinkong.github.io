@@ -45,7 +45,7 @@ body{
   align-items: center;
   z-index: 1000; /* Set a high z-index to make sure it's on top of other elements */
   opacity: 0; /* Start with 0 opacity */
-  animation: fadeIn 0.5s ease-in-out forwards; /* Fade-in animation */
+  animation: fadeIn 0s ease-in-out forwards; /* Fade-in animation */
 }
 
 .loader {
