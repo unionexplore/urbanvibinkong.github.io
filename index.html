@@ -15,14 +15,14 @@
   
   <nav class="navbar navbarCustom">
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://urbanvibinkong.site/">
+      <a class="navbar-brand fade-in-down" id="animatedFadeDown" href="https://urbanvibinkong.site/">
         <img src="assets/logo.png" class="logo" alt="Logo">
       </a>
     </div>
   </nav>
 
   <section class="container" id="navigationSection">
-    <div class="wrapper wrapperNavigation">
+    <div class="wrapper wrapperNavigation fade-up">
       <a href="#" onclick="aboutSection()" class="navigationBar active" data-target="sectionAbout">About NFT</a>
       <a href="#" onclick="jumpTo()" class="navigationBar" data-target="sectionJump">Jump To</a>
     </div>
@@ -31,7 +31,7 @@
   <section class=" sectionAbout" id="sectionAbout">
   <div class="container">
 
-      <div class="wrapper cardInfo" style="margin:20px">
+      <div class="wrapper cardInfo fade-up" style="margin:20px">
         <span class="headerInfo">What is Urban Vibin Kong</span>
         <span class="mainInfo">
           Presenting "Urban Vibin Kong" – an NFT capturing the stylish escapades of a fashionable gorilla in the modern urban landscape. This fun doodle art piece is created purely for the joy of art, without any specific project goals. Join Kong on a playful journey through the urban jungle, celebrating the fusion of wild and modern vibes in this delightful and trendy digital artwork.
@@ -39,11 +39,11 @@
       </div>
 
       <div class="wrapper secondHero">
-        <div class="f-column">
+        <div class="f-column fade-up">
           <img src="assets/pc.png" alt="PC">
         </div>
 
-        <div class="s-column">
+        <div class="s-column fade-up">
           <span class="headerInfo">Philosophy</span>
           <span class="mainInfo">
             Dive into the captivating realm of Urban Vibin Kong an NFT sensation that invites you to witness the chic escapades of a trendsetting gorilla amidst the urban jungle. This vibrant doodle art is a celebration of creativity without bounds. Immerse yourself in the joy of minting this unique digital masterpiece, where the untamed spirit converges with modern allure. Join us in exploring the limitless possibilities of artistic expression—no promises, just an exciting journey through the wild and stylish. Mint with us and be a part of this electrifying fusion in the world of NFTs!
@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <div class="wrapper founder">
+      <div class="wrapper founder fade-up">
         <div class="d-flex flex-row cardFounder" style="">
           <div class="p-2">
             <img src="assets/founder.png" alt="Founder" class="founderIMG">
@@ -63,7 +63,7 @@
         </div>
       </div>
 
-      <div class="wrapper cardInfo" style="margin:20px;">
+      <div class="wrapper cardInfo fade-up" style="margin:20px;">
         <span class="headerInfo" style="margin-bottom: 0px;">Own your Kong's</span>
         <div class="buttonAreaWrapper">
           <a href="https://exchange.art/urbanvibinkong/" target="_blank" class="mainButton">
@@ -84,7 +84,7 @@
     <div class="container" style="padding: 30px;">
       <div class="buttonAreaWrapper" style="display: flex; flex-direction: column; row-gap: 35px;">
 
-        <a href="https://twitter.com/urbanvibinkong/" target="_blank" class="mainButton">
+        <a href="https://twitter.com/urbanvibinkong/" target="_blank" class="mainButton fade-up">
           <i class="fa-brands fa-x-twitter"></i> Follow Our Twitter
         </a>
 
@@ -92,11 +92,11 @@
           <i class="fa-brands fa-discord"></i> Discord ( Soon )
         </a>
 
-        <a href="https://exchange.art/urbanvibinkong/" target="_blank" class="mainButton">
+        <a href="https://exchange.art/urbanvibinkong/" target="_blank" class="mainButton fade-up">
           <img src="assets/Exchange Art.svg" alt="Exchange Art"> Buy NFT on Exchange Art
         </a>
 
-        <a href="#" target="_blank" class="mainButton">
+        <a href="#" target="_blank" class="mainButton fade-up">
           <i class="fa-solid fa-wand-magic-sparkles"></i> Generator ( Soon )
         </a>
 
@@ -108,11 +108,11 @@
     <img src="assets/FooterNew.png" alt="">
     <div class="footerContent" style="background-color: #61458F; padding-top: 100px;">
       <div class="container" style="">
-        <div class="col">
+        <div class="col fade-up">
           ©2023 Urban Vibin Kong . <span class="mobileSpacer">All Rights Reserved</span>
         </div>
 
-        <div class="col" style="text-align: end;">
+        <div class="col fade-up" style="text-align: end;">
           Web Evolution 1.0
         </div>
       </div>
@@ -127,5 +127,8 @@
 
   <!-- Own Script -->
   <script src="js/navigation.js"></script>
+  <script src="js/fadeindown.js"></script>
+  <script src="js/fadeinup.js"></script>
+
 </body>
 </html>
