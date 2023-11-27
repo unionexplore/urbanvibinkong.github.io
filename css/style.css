@@ -149,7 +149,6 @@ body{
   flex: 4;
   border-radius: 16px;
   width: 100%;
-  flex-basis: 100%;
   max-width: 100%;
   overflow: hidden;
 }
